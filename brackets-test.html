@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href = 'CSS/style.css' rel = 'stylesheet'>
+    <link href = 'CSS/brackets.css' rel = 'stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2d89ef" />
+    <meta name="apple-mobile-web-app-title" content="WOLF" />
+    <meta name="application-name" content="WOLF" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find out more about WOLF Financial's goals, and our Amazing Team"
+    />
+    <title>WOLF | Brackets</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162143859-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-162143859-1');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA==" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class = 'main'>
+
+    <div id = 'desktop'>
+        <div class = 'dates'>
+            <div class = 'date r1'>
+                <h1> Round 1 </h1>
+                <h2> Mar 22-26</h2>
+            </div>
+            <div class = 'date'>
+                <h1> Round 2 </h1>
+                <h2> Mar 29-Apr 2 </h2>
+            </div>
+            <div class = 'date'>
+                <h1> Round 3 </h1>
+                <h2> Apr 5-9 </h2>
+            </div>
+            <div class = 'date'>
+                <h1> Round 4 </h1>
+                <h2> Apr 12 </h2>
+            </div>
+            <div class = 'date'>
+                <h1> Round 5 </h1>
+                <h2> Apr 16 </h2>
+            </div>
+            <div class = 'date champ'>
+                <h1> Championship </h1>
+                <h2> Apr 19 </h2>
+            </div>
+            <div class = 'date'>
+                <h1> Round 5 </h1>
+                <h2> Apr 16 </h2>
+            </div>
+            <div class = 'date'>
+                <h1> Round 4 </h1>
+                <h2> Apr 12 </h2>
+            </div>
+            <div class = 'date'>
+                <h1> Round 3 </h1>
+                <h2> Apr 5-9 </h2>
+            </div>
+            <div class = 'date'>
+                <h1> Round 2 </h1>
+                <h2> Mar 29-Apr 2 </h2>
+            </div>
+            <div class = 'date r1'>
+                <h1> Round 1 </h1>
+                <h2> Mar 22-26 </h2>
+            </div>
+
+        </div>
+        <canvas id = 'bg'></canvas>
+        <canvas id = 'canvas'></canvas>
+    </div>
+
+
+    <div id = 'mobile'>
+        <div id = 'buttons'>
+            <div id = 'prevRound' onclick='prevRound()'> Back </div>
+            <div id = 'nextRound' onclick='nextRound()'> Next </div>
+        </div>
+    </div>
+
+    <div id = 'info'>
+        <div id = 'infoHeader'>
+            <h1> Information </h1>
+            <p id = 'closeInfo'> Close </p>
+        </div>
+        <div id = 'infoText'>
+            <h1>
+                What is Market Madness?
+            </h1>
+            <p>
+                Market Madness is a spin-off based on filling out a bracket for college basketball’s
+                “March Madness” where 64 teams compete in a tournament, with one winner coming out on top.
+                At WOLF Financial, we thought it would be an exciting idea to make a tournament with stocks
+                competing against one another. We’ve chosen 16 stocks (64 total) for each of the following
+                4 categories of the market: Zoomer, Boomer, SPACs/ETFs and the esteemed ‘meme stocks.’
+                If you take a look at the bracket on our website, you’ll see how the matchups are set up.
+            </p>
+            <p>
+                You’ll be able to fill out a bracket here on our website for a chance to win $10,000!
+                Information about the cash prize is stated below. There is also a raffle you can enter by
+                sharing that you completed a bracket via a twitter post, also discussed below. Brackets
+                must be filled out before the tournament begins on March 22nd.
+            </p>
+            <p>
+                Which stock is going to win it all 🚀?
+            </p>
+            <h1>
+                How are Winning Stocks Chosen?
+            </h1>
+            <p>
+                The winner of a matchup is chosen via a twitter poll that will run on our Twitter account @HowlWithWOLF.
+                It’s simple--the stock which garners more votes on our poll wins the matchup, and moves on to the next round.
+            </p>
+            <h1>
+                How does scoring work?
+            </h1>
+            <p>
+                Similar to College Basketball’s “March Madness”, our Market Madness Tournament will start with the round of 64,
+                then move on to 32, 16, 8, etc.)
+            </p>
+            <p>
+                By picking the winner of a poll, you earn points. The point system is as follows:
+            </p>
+            <p>
+                If you pick a winner in the...
+            </p>
+            <p>
+                <i> Round of 64 </i> you earn <b> 1 Point</b> <br>
+                <i> Round of 32 </i> you earn <b> 2 Points</b> <br>
+                <i> Sweet 16 </i> you earn <b> 4 Points</b> <br>
+                <i> Elite 8 </i> you earn <b> 8 Points</b> <br>
+                <i> Final 4 </i> you earn <b> 16 Points</b> <br>
+                <i> Championship </i> you earn <b> 31 Points</b> <br>
+            </p>
+            <p>
+                <b> Tiebreaker:</b>  When filling out a bracket, the following tiebreaker question will be prompted--
+                Predict the return of your winning stock? Whoever is closest wins the tiebreaker.
+            </p>
+            <h1>
+                When Are the Polls?
+            </h1>
+            <p>
+                1. Round of 64 <i> (32 polls) </i> <br>
+                <span> Every day from March 22 ~ 26 </span>
+                2. Round of 32 <i> (16 polls) </i> <br>
+                <span> Week of March 29 ~ Apr 2, Mon-Wed-Fri</span>
+                3. Sweet 16 <i> (8 polls) </i> <br>
+                <span> Week of April 5 ~ 9, Tue & Thurs</span>
+                4. Elite 8 <i> (4 polls) </i> <br>
+                <span> Polls run Monday, April 12 </span>
+                5. Final 4 <i> (2 polls) </i> <br>
+                <span> Polls run Friday, April 16 </span>
+                6. Championship <i> (1 poll) </i> <br>
+                <span> Polls run Monday, April 19 </span>
+            </p>
+            <p>
+                All polls begin at <b>noon</b>
+            </p>
+            <p>
+                Round of 64: Polls run <b> 22 hours </b>(i.e. They end at <b> 10 AM </b> the next day.
+                Rounds, 32, 16, 8, 4: Polls run <b> 24 hours</b>
+                Championship Round: Poll runs <b>48 hours </b>
+            </p>
+            <h1 class = 'last'>
+                If you have any questions or comments, please tweet at us <i> @HowlWithWOLF </i>on Twitter!
+            </h1>
+        </div>
+
+    </div>
+
+    <div class = 'modal'>
+        <input type = 'text' id = 'name' placeholder = 'Name'>
+        <input type = 'email' id = 'email' placeholder = 'Email'>
+        <p> <b> TIEBREAKER:</b> Guess the total % return of your champion stock over the course of the competition. </p>
+        <div class = 'h'>
+            <input type = 'text' id = 'tiebreaker' placeholder = 'Guess a value...'>
+            <h2> % </h2>
+        </div>
+        <div class = 'h'>
+            <input type = 'checkbox' id = 'checkbox'>
+            <h3> I have read and agree to the <a href = 'brackets-tos.html' target='_blank'>Terms and Conditions</a>. </h3>
+        </div>
+        <button id = 'submit'> Submit </button>
+        <p id = 'cancel'> Cancel </p>
+    </div>
+
+    <img src='' alt='screenshot' id = 'snap' crossorigin="anonymous">
+
+</div>
+
+<script src = 'JS/functions.js'></script>
+
+<script src = 'JS/page.js'></script>
+<script src = 'JS/global.js'></script>
+<script src = 'JS/brackets-test.js'></script>
+<script src = 'JS/brackets-m.js'></script>
+</html>

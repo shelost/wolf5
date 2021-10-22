@@ -1,0 +1,3 @@
+User-agent: * Disallow:
+
+Sitemap: https://api.wolf.financial/v1/landing-page/sitemap.xml
