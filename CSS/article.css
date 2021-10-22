@@ -1,0 +1,130 @@
+#wolf {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  .banner {
+    width: 100vw;
+    height: 25vw;
+    background-color: white;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .article {
+    background: white;
+    color: black;
+    margin-top: 25vw;
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    padding-bottom: 50px;
+  }
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 15px;
+  }
+  .header h1 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .header h2 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .header h2 .date {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  p {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 300;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    color: black;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    width: 100vw;
+    height: 50vw;
+    background-color: white;
+    background-size: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .article {
+    background: white;
+    color: black;
+    margin-top: 50vw;
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    padding-bottom: 50px;
+  }
+  .header {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 90%;
+    margin: auto;
+  }
+  .header h1 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .header h2 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .header h2 .date {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  p {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    color: black;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=article.css.map */

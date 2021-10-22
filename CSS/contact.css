@@ -1,0 +1,254 @@
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  input {
+    background: #eff2ff;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 15px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    border: 1px solid rgba(239, 242, 255, 0);
+    width: 800px;
+    margin-bottom: 10px;
+  }
+  input:hover {
+    border: 1px solid #0076FF;
+  }
+  textarea {
+    background: #eff2ff;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 15px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    border: 1px solid rgba(239, 242, 255, 0);
+    width: 800px;
+    height: 200px;
+    resize: vertical;
+    margin-bottom: 20px;
+  }
+  textarea:hover {
+    border: 1px solid #0076FF;
+  }
+  button {
+    background: #0076FF;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #0051ff;
+  }
+  .text {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .subtext {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  .social-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .social-row .social-item {
+    margin: 10px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .social-row .social-item img {
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .social-row .social-item:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  input {
+    background: #eff2ff;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    border: 1.5px solid rgba(239, 242, 255, 0);
+    width: 80vw;
+    margin-bottom: 15px;
+  }
+  input:hover {
+    border: 1.5px solid #0076FF;
+  }
+  textarea {
+    background: #eff2ff;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    border: 1.5px solid rgba(239, 242, 255, 0);
+    width: 80vw;
+    height: 200px;
+    resize: vertical;
+  }
+  textarea:hover {
+    border: 1.5px solid #0076FF;
+  }
+  button {
+    background: #0076FF;
+    border-radius: 40px;
+    padding: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #0051ff;
+  }
+  button svg {
+    height: 100%;
+  }
+  button svg polyline {
+    height: 100%;
+    stroke: white;
+    fill: none;
+    stroke-width: 3px;
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+  .link {
+    border: 2px solid #0076FF;
+    border-radius: 10px;
+    padding: 6px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #3391ff;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .link:hover {
+    border: 2px solid #0051ff;
+    color: #0076FF;
+  }
+  .link svg {
+    height: 100%;
+  }
+  .link svg polyline {
+    height: 100%;
+    stroke: white;
+    fill: none;
+    stroke-width: 3px;
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+  .text {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .subtext {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px;
+    margin-bottom: 10px;
+  }
+  .social-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .social-row .social-item {
+    margin: 10px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .social-row .social-item img {
+    width: 25vw;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .social-row .social-item:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+/*# sourceMappingURL=contact.css.map */

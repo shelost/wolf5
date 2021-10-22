@@ -1,0 +1,282 @@
+@import 'variables';
+
+body{
+    background: white;
+    color: black;
+}
+
+.main{
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+#wolf{
+    .st0 {
+        fill: #0286FF;
+      }
+      .st1 {
+        fill: $l-icon;
+      }
+      .st2 {
+        fill: darken($l-icon, 10%);
+      }
+      .st3 {
+        fill: darken($l-icon, 0%);
+      }
+      .st4 {
+        fill: darken($l-icon, 30%);
+      }
+      .st5 {
+        fill: darken($l-icon, 40%);
+      }
+}
+
+#wolf{
+    width: 90vh;
+    height: 90vh;
+    position: fixed;
+    top: 5vh;
+    left: calc(50vw - 45vh);
+    z-index: -2;
+    .wolf-poly{
+        opacity: 0.05;
+    }
+    .eye{
+        opacity: 0.1;
+    }
+}
+
+.highlight{
+    background: linear-gradient(30deg, #5c00f1, $blue);
+    font-style: italic;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+
+@media screen and (min-width: 800px){
+
+    .title{
+        text-align: center;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 80px;
+        margin-bottom: 50px;
+        background: linear-gradient(20deg, #7aff8c, rgb(206, 255, 186));
+        .text{
+            text-align: left;
+            margin: 40px;
+            margin-left: 80px;
+            margin-top: 80px;
+            padding-bottom: 10px;
+            h1{
+                font-size: 45px;
+                line-height: 45px;
+                font-weight: 700;
+                margin: 0px;
+                margin-bottom: 10px;
+                span{
+                    font-style: italic;
+                }
+            }
+            h2{
+                font-size: 22px;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+        img{
+            mix-blend-mode: hard-light;
+            width: 250px;
+            height: 250px;
+            margin-right: 110px;
+        }
+    }
+
+    .slide{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100vw;
+        max-width: 1100px;
+        margin: auto;
+        height: 400px;
+        transition: 0.3s ease;
+        margin-bottom: -40px;
+        img{
+            height: 350px;
+            margin: 0;
+        }
+        figcaption{
+            transform: translateY(-15px);
+            color: rgba(black, 0.1);
+        }
+        .expo{
+            margin: 0;
+            width: 50vw;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            h1{
+                font-size: 36px;
+                line-height: 40px;
+                font-weight: 700;
+                margin: 0;
+                margin-bottom: 15px;
+            }
+            h2{
+                font-size: 20px;
+                margin: 0;
+                margin-bottom: 5px;
+                font-weight: 500;
+                color: #a0a0a0;
+            }
+            p{
+                font-size: 18px;
+                line-height: 25px;
+                font-weight: 300;
+                margin: 0;
+                width: 90%;
+                &.finetext{
+                    margin-top: 20px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #aaaaaa;
+                    border-radius: 10px;
+                    padding: 10px;
+                    background: #f1f1f3;
+                }
+            }
+        }
+        &.right{
+            justify-content: right;
+            .expo{
+                align-items: flex-end;
+                h2{
+                    text-align: right;
+                    float: right;
+                }
+                h1{
+                    text-align: right;
+                    float: right;
+                }
+                p{
+                    text-align: right;
+                    float: right;
+                }
+                h2{
+                    text-align: right;
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px){
+
+    .title{
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        background: linear-gradient(20deg, #7aff8c, rgb(206, 255, 186));
+        .text{
+            text-align: left;
+            margin: 20px;
+            margin-left: 20px;
+            margin-top: 80px;
+            padding-bottom: 10px;
+            h1{
+                font-size: 35px;
+                line-height: 40px;
+                font-weight: 700;
+                margin: 0px;
+                margin-bottom: 10px;
+                span{
+                    font-style: italic;
+                }
+            }
+            h2{
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+        img{
+            width: 250px;
+            max-width: 90vw;
+            height: 250px;
+            margin: 0;
+        }
+    }
+
+    .slide{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: 0.3s ease;
+        margin-bottom: 20px;
+        figcaption{
+            transform: translateY(-10px);
+        }
+        img{
+            width: 98vw;
+            border-radius: 35px;
+            margin: 0;
+        }
+        .expo{
+            margin: 20px;
+            margin-top: 0;
+            width: 88%;
+            text-align: left;
+            max-width: 600px;
+            h2{
+                font-size: 20px;
+                font-weight: 500;
+                margin: 0;
+                color: #a0a0a0;
+            }
+            h1{
+                font-size: 26px;
+                line-height: 32px;
+                font-weight: 700;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 300;
+                margin: 0;
+                &.finetext{
+                    margin-top: 20px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #aaaaaa;
+                    border-radius: 10px;
+                    padding: 10px;
+                    background: #f1f1f3;
+                }
+            }
+        }
+
+        &.right{
+            margin: 0;
+        }
+
+    }
+}
+
