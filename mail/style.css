@@ -1,0 +1,145 @@
+body {
+  font-family: Poppins, sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+  .banner {
+    width: 600px;
+    height: 240px;
+  }
+  .content {
+    width: 600px;
+    margin: auto;
+    border: 1px solid #e2e2e2;
+  }
+  .text {
+    width: 550px;
+    margin: auto;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 300;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  button {
+    background: #0074ff;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 0px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+  }
+  button:hover {
+    background: #0051ff;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a p {
+    font-weight: 500;
+  }
+  a p:hover {
+    color: #0074ff;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-top: 15px;
+  }
+  .footer {
+    background: #ececec;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    width: 98vw;
+    height: 40vw;
+  }
+  .content {
+    width: 100vw;
+    margin: auto;
+  }
+  .text {
+    width: 92vw;
+    margin: auto;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 300;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  button {
+    background: #0074ff;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 0px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+  }
+  button:hover {
+    background: #0051ff;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a p {
+    font-weight: 500;
+  }
+  a p:hover {
+    color: #0074ff;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  .footer {
+    width: 98vw;
+    background: #ececec;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .footer .text {
+    width: 88vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
